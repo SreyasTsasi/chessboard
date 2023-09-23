@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  display:flex;
+  flex-direction: column;
+  gap: 3rem;
+  height:100vh;
+  width:100vw;
+  margin:0;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  border:4px groove black;
+  border-collapse: collapse;
+
+}
+td {
+  height:5rem;
+  width:5rem;
+}
+   
+tr:nth-child(2n) > td:nth-child(2n) {
+   background-color: black;
+}
+tr:nth-child(2n-1) > td:nth-child(2n-1) {
+  background-color: black;
+   
+}
+.pawn {
+
+  height:3rem;
+  aspect-ratio:1/1;
+  background-color: white;
+  border: 0.25rem solid black;
+  border-radius:50%;
+  margin:auto;
+
+}
